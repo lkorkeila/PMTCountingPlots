@@ -30,6 +30,7 @@ if __name__=='__main__':
     alldatafiles.load_datafiles()
     #Loads in bkg files for use. Uncomment to calculate bkgs w/ peak sidebands
     alldatafiles.load_bkgdatafiles()
-
+    if DEBUG is True:
+        print("FILES LOADED SUCCESSFULLY.  INITIALIZING PLOTTER CLASS")
     ourplotter = p.DataPlotter(dataclass=alldatafiles)
     ourplotter.StackPlot_FirstDataFiles()
