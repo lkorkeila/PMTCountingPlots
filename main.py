@@ -34,3 +34,6 @@ if __name__=='__main__':
         print("FILES LOADED SUCCESSFULLY.  INITIALIZING PLOTTER CLASS")
     ourplotter = p.DataPlotter(dataclass=alldatafiles)
     ourplotter.StackPlot_FirstDataFiles()
+    ourplotter.BkgSubtract_FirstDataFiles()
+    ourplotter.BkgSubtract_RoughShift()
+    ourplotter.BkgSubtract_FDF_Peakshift()
